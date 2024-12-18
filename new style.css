@@ -1,0 +1,167 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8; /* Soft background color */
+    color: #333;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #ff7f50; /* Coral color for headings */
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Navbar Styling */
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #139182; /* Muted teal for navbar */
+    padding: 15px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#navbar a {
+    color: white;
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#navbar a:hover {
+    color: #e9c46a; /* Golden color on hover */
+    text-decoration: underline;
+}
+
+.search-container input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #e9c46a; /* Border with golden color */
+    border-radius: 25px;
+    width: 200px;
+    margin-right: 10px;
+}
+
+.search-container button {
+    background-color: #264653; /* Darker teal button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.search-container button:hover {
+    background-color: #e9c46a; /* Golden color on hover */
+    color: #264653;
+}
+
+/* Section Styling */
+#what {
+    background-color: #fff;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    line-height: 1.8;
+}
+
+img.imgg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 30px auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 5px solid #f0f4f8; /* Soft border around images */
+}
+
+.Ingredients, .recipe {
+    background-color: #fff;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    line-height: 1.8;
+}
+
+.Ingredients h2, .recipe h1 {
+    color: #264653; /* Deep teal for titles */
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background: #e9f7f1; /* Light greenish-blue background */
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+li strong {
+    color: #2a9d8f; /* Teal color for strong elements */
+}
+.Ingredients li:hover {
+    background-color: #2a9d8f; /* Darker teal on hover */
+    color: white;
+    transform: scale(1.05); /* Slightly enlarges on hover */
+}
+
+.recipe li {
+    margin: 10px 0;
+    padding: 15px 0;
+    font-size: 16px;
+}
+.recipe li:hover {
+    background:#2a9d8f ;
+}
+h2{
+    color: #2a9d8f;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    #navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search-container {
+        margin-top: 10px;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .search-container input {
+        width: 70%;
+    }
+
+    .search-container button {
+        width: 25%;
+    }
+
+    img.imgg {
+        margin-top: 20px;
+    }
+}
+.iframe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
