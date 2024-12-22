@@ -6,7 +6,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Delicious Recipes</title>
-  <link rel="stylesheet" href="home style.css">  
+  <link rel="stylesheet" href="home style.css"> 
+  <style>
+    /* Scrollable Container Styling */
+.scroll-container {
+  display: flex;
+  gap: 15px; /* Space between cards */
+  overflow-x: auto; /* Horizontal scrolling */
+  scroll-snap-type: x mandatory; /* Smooth snap scrolling */
+  padding: 10px;
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for better UI */
+}
+
+.recipe-card-catigory {
+  flex: 0 0 auto; /* Ensure cards don't shrink or grow */
+  width: 100%; /* Adjust card width */
+  height: auto;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-card-catigory img {
+  height: 240px;
+}
+
+.recipe-card-catigory h3 {
+  padding: 10px;
+  font-size: 18px;
+}
+  </style> 
 </head>
 <body>
   <!-- Header Section -->
@@ -30,14 +65,41 @@
 
   <!-- Featured Recipe Section -->
   <section class="featured-recipe">
-    <div class="container">
-      <h2>Featured Recipe of the Week</h2>
-      <div class="recipe-card">
-        <img src="d:\Adv web\food recipe\spagiti.jpg" alt="Recipe Image">
-        <div class="recipe-info">
-          <h3>Classic Spaghetti Bolognese</h3>
-          <p>Try this easy and classic spaghetti bolognese recipe with rich and hearty flavors.</p>
-          <a href="#" class="button">See Recipe</a>
+    <div class="scroll-container" id="scroll-container">
+      <div class="recipe-card-catigory">
+        <h2>Most viewed recipe</h2>
+        <div class="container">
+          <img src="kofta.jpg" alt="Recipe Image">
+          <div class="recipe-info">
+            <h3>Kofta</h3>
+            <p>Try this easy and classic Kofta recipe with rich and hearty flavors.</p>
+            <a href="#" class="button">See Recipe</a>
+            <br><br>
+          </div>
+        </div>
+      </div>
+      <div class="recipe-card-catigory">
+        <h2>Top rated recipe</h2>
+        <div class="container">
+          <img src="kabab.jpg" alt="Recipe Image">
+          <div class="recipe-info">
+            <h3>Kabab</h3>
+            <p>Try this easy and classic Kabab recipe with rich and hearty flavors.</p>
+            <a href="#" class="button">See Recipe</a>
+            <br><br>
+          </div>
+        </div>
+      </div>
+      <div class="recipe-card-catigory" >
+        <h2>Most recent recipe</h2>
+        <div class="container">
+          <img src="molokha.jpg" alt="Recipe Image">
+          <div class="recipe-info">
+            <h3>Moloukhia</h3>
+            <p>Try this easy Moloukhia recipe with rich and hearty flavors.</p>
+            <a href="#" class="button">See Recipe</a>
+            <br><br>
+          </div>
         </div>
       </div>
     </div>
